@@ -1,0 +1,32 @@
+<!DOCTYPE html />
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+		<script type="text/javascript" src="js/controles.js"></script>
+		<title>Ejercicio de avion</title>
+	</head>
+	<body>
+		<article>
+			<h2>Avion volando</h2>
+			<div id="visor">
+				<img id = "playa" src="img/playa.jpg" alt = "playa">
+				<img class = "avion" src="img/avion.png" alt = "avion">
+			</div>
+		</article>	
+
+		<div class = "controles">
+			<input type="button" name="Parar" value="parar" onclick="anim.parar()" />
+			<input type="button" name="Arrancar" value="arrancar" onclick="anim.animar()" />
+			<b>Elige la velocidad</b>
+			<select name="vel" onchange="anim.cambiarVelocidad(this.value);">
+				<option value="10" >Muy lento</option>
+				<option value="5" >Lento</option>
+				<option selected value="3" >Normal</option>
+				<option value="1" >Rápido</option>
+				<option value="0.5" >Muy Rápido</option>
+			</select>
+		</div>
+	</body>
+
+</html>

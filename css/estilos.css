@@ -1,0 +1,61 @@
+.avion {
+	position: absolute;
+	top: 30px;
+	left: 140px;
+	width: 50px; height:30px;
+}
+
+.controles{
+	position:relative;
+	margin-top: 20px;
+	float:left;
+	width:100%;
+}
+
+#visor {
+	width: 400px;
+	height: 400px;
+	background-color: silver;
+	overflow: hidden;
+	position: relative;
+}
+
+@keyframes playa {
+	from {  left: 0px; }
+
+	to { left: -600px;  }
+}
+
+@-moz-keyframes playa {
+	from {  left: 0px; }
+
+	to { left: -600px;  }
+}
+
+@-webkit-keyframes playa {
+	from {  left: 0px; }
+
+	to { left: -600px;  }
+}
+
+#playa
+{
+	position: absolute;
+	width: 1200px;
+	height: 400px;
+	animation-name: playa;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	-moz-animation-name: playa;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+
+	-webkit-animation-name: playa;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;*
+
+}
